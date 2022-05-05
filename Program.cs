@@ -51,7 +51,10 @@ namespace GuessingGame
                         else
                         {
                             counter++;
-                            Console.Write("Try again.");
+                            if (counter < 3)
+                            {
+                                Console.Write("Try again. ");
+                            }
                         }
                     }
                     while (guess != "london" && counter != 3);
@@ -88,7 +91,10 @@ namespace GuessingGame
                         else
                         {
                             counter++;
-                            Console.Write("Try again.");
+                            if (counter < 3)
+                            {
+                                Console.Write("Try again. ");
+                            }
                         }
                     }
                     while (guess != "cardiff" && counter != 3);
@@ -125,7 +131,10 @@ namespace GuessingGame
                         else
                         {
                             counter++;
-                            Console.Write("Try again.");
+                            if (counter < 3)
+                            {
+                                Console.Write("Try again. ");
+                            }
                         }
                     }
                     while (guess != "paris" && counter != 3);
