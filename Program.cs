@@ -19,11 +19,11 @@ namespace GuessingGame
             Program.Question3(newGame);
             if((newGame.Ctr / 3 ) * 100 == 100)
             {
-                Console.WriteLine("Well done, you scored 100%!");
+                Console.WriteLine("Well done" + newGame.Player + ", you scored 100%!");
             }
             else if ((newGame.Ctr / 3) * 100 > 60 && (newGame.Ctr / 3) * 100 < 80)
             {
-                Console.WriteLine("Good job, you got " + newGame.Ctr + " correct.");
+                Console.WriteLine("Good job " + newGame.Player + ", you got " + newGame.Ctr + " correct.");
             }
             else if ((newGame.Ctr / 3) * 100 < 60)
             {
