@@ -19,7 +19,7 @@ namespace GuessingGame
             Program.Question3(newGame);
             if((newGame.Ctr / 3 ) * 100 == 100)
             {
-                Console.WriteLine("Well done" + newGame.Player + ", you scored 100%!");
+                Console.WriteLine("Well done " + newGame.Player + ", you scored 100%!");
             }
             else if ((newGame.Ctr / 3) * 100 > 60 && (newGame.Ctr / 3) * 100 < 80)
             {
@@ -151,6 +151,29 @@ namespace GuessingGame
             }
         }
 
+
+    }
+
+    public class Points
+    {
+        private int ctr;
+        private string player;
+        public int Ctr
+        {
+            get { return ctr; }
+            set { ctr = value; }
+        }
+
+        public string Player
+        {
+            get { return player; }
+            set { player = value; }
+        }
+
+        public void AddPoint()
+        {
+            ctr++;
+        }
 
     }
 
